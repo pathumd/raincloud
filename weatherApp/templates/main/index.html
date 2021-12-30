@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>raincloud - the simple weather app</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'style.css' %}" />
+    </head>
+    <body>
+        <div class="brand-title">
+            <h1 class="brand-header">raincloud</h1>
+        </div>
+        <form method="post" class="search-container">
+            {% csrf_token %}
+           <div style="display: flex">
+            <input type="text" name="city" id="search-bar" placeholder="Search for a city or postal code..." required>
+            <button class="search-button"><img class="search-icon" src="{% static 'images/search.svg' %}"></button>
+           </div>
+          </form>
+        <div class="main-container">
+            {% if country_code and feel_temp and min_temp and max_temp and temp and pressure and humidity %}
+            <div class="dashboard">
+                <div class="left-display">
+                    <h1 class="country-code"><span class="heading">Country code:</span> {{country_code}}</h1>
+                    <h1 class="pressure"><span class="heading">Pressure:</span> {{pressure}}</h1>
+                    <h1 class="humidity"><span class="heading">Humidity:</span> {{humidity}}</h1>
+                </div>
+                <div class="temp-display">
+                    <h1 class="main-temp">{{temp}}</h1>
+                    <h1 class="degrees">°C</h1>
+                </div>
+                <div class="right-display">
+                    <h1 class="feels-like"><span class="heading">Feels like:</span> {{feel_temp}} </h1>
+                    <h1 class="min-temp"><span class="heading">Min temp:</span> {{min_temp}}</h1>
+                    <h1 class="max-temp"><span class="heading">Max temp:</span> {{max_temp}}</h1>
+                </div>
+            </div>
+            <div class="current-status">
+                <h1 class="status">{{description}}</h1>
+            </div>
+            {% endif %}
+        </div>
+    </body>
+</html>
