@@ -8,6 +8,12 @@ Description:
 - The web application was developed using Python's Django framework, HTML and CSS. Raincloud features a minimal, sleek design to present the user with the data they are looking for, and nothing else. Adobe XD was used to design the front-end of the application.
 - Live demo: http://pathum65.pythonanywhere.com/
 
+Description:
+--------------
+- Django (Python)
+- HTML & CSS
+- Adobe XD
+
 Requirements:
 ---------
 Python 3.7 or later, the Django framework and pip must be installed to run the application locally.
