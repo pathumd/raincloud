@@ -1,7 +1,7 @@
 # Raincloud
 Project Version 1.0 12/30/2021
 
-![alt text](https://github.com/pathumd/Sadaham-Sisila/blob/main/mainmockup.jpg?raw=true)
+![alt text](https://i.imgur.com/3E9ctFv.jpg?raw=true)
 Description:
 --------------
 - Raincloud is a simple, easy-to-use weather web application where you can find your local weather data by entering your city, zip code or coordinates.
