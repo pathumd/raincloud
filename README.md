@@ -5,7 +5,7 @@ Project Version 1.0 12/30/2021
 Description:
 --------------
 - Raincloud is a simple, easy-to-use weather web application where you can find your local weather data by entering your city, zip code or coordinates.
-- The web application was developed using Python's Django framework, HTML and CSS. Raincloud features a minimal, sleek design to present the user with the data they are looking for, and nothing else. Adobe XD was used to design the front-end of the application.
+- The web application was developed using Python's Django framework, HTML and CSS. Raincloud features a minimal, sleek design to present the user with the data they are looking for in a straightforward manner. Adobe XD was used to design the front-end of the application.
 - Live demo: http://pathum65.pythonanywhere.com/
 
 Tools used:
